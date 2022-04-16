@@ -1,0 +1,25 @@
+GET http://localhost:3000/
+###
+GET http://localhost:3000/api/customer
+###
+GET http://localhost:3000/api/customer/616f8cb511d6e9e6b3cca3fb
+###
+POST http://localhost:3000/api/customer HTTP/1.1
+Content-Type: application/json
+
+{
+    "CustomerId": 1004,
+    "FullName": "เจนจิรา สุขใจจริง",
+    "Address": "สมุทรสงคราม"
+}
+###
+PUT http://localhost:3000/api/customer/616f8cb511d6e9e6b3cca3fb HTTP/1.1
+Content-Type: application/json
+
+{
+    "CustomerId": 1002,
+    "FullName": "ศักดิ์ชัย มิตรกิจเจริญ",
+    "Address": "USA"
+}
+###
+DELETE http://localhost:3000/api/customer/616f8cb511d6e9e6b3cca3fb HTTP/1.1
